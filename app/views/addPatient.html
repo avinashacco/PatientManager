@@ -1,0 +1,40 @@
+<div class="formdiv">
+	<h4>Add Patient</h4>
+	<p class="help-block">Enter the following details to add patient details.</p>
+
+	<form role="form" ng-submit="addPatient()">
+	  <div class="form-group">
+	    <label for="patientname">Patient Name :</label>
+	    <input type="text" ng-model="patientname" class="form-control" id="patientname" placeholder="Enter Patient Name" required data-placement="right" title="Patient Name is required">
+	  </div>
+	  <div class="form-group">
+	    <label for="Age">Age :</label>
+	    <input type="number" ng-model="age" class="form-control" id="age" placeholder="Enter Age" required data-placement="right" title="Only numbers are allowed">
+	  </div>
+	  <div class="form-group">
+	    <label for="visitingdate">Visiting Date :</label>
+	    <input type="text" ng-model="visitingdate" class="form-control" id="visitingdate" placeholder="Select Visiting Date" required data-placement="right" title="Select a date">
+	  </div>
+	  <div class="form-group">
+	    <label for="docname">Doctor Name :</label>
+	    <input type="text" ng-model="doctorname" class="form-control" id="docname" placeholder="Enter Doctor Name" required data-placement="right" title="Doctor Name is required">
+	  </div>
+	  <div class="form-group">
+	    <label for="hospitalname">Hospital Name :</label>
+	    <input type="text" ng-model="hospitalname" class="form-control" id="hospitalname" placeholder="Enter Hospital Name" required data-placement="right" title="Hostal Name is required">
+	  </div>
+	  <div class="form-group">
+	    <label for="attachments">Attachments :</label>
+	    <input type="file" id="attachments"  ng-file-select="onFileSelect($files)" multiple>
+	  </div>
+	  <div class="progress" style="margin-top: 20px;">
+		<div class="progress-bar" progress-bar="uploadProgress"
+			role="progressbar">
+			<span ng-bind="uploadProgress"></span> <span>%</span>
+		</div>
+	  </div>
+	  <button type="submit" class="btn btn-primary pull-right">Submit</button>
+	  <br/>
+	</form>
+</div>
+<script type="text/javascript" src="js/utils.js"></script>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://docs.angularjs.org/error/$injector/unpr?p0= -->
+<html lang="en" ng-app="docsApp" ng-controller="DocsController" class="ng-scope" data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-animate){display:none !important;}ng\:form{display:block;}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="Description" content="AngularJS is what HTML would have been, had it been designed for building web-apps.
+                 Declarative templates with data-binding, MVC, dependency injection and great
+                 testability story all implemented with pure client-side JavaScript!">
+  <meta name="fragment" content="!">
+  <title ng-bind-template="AngularJS: Error Reference: unpr" class="ng-binding">AngularJS: Error Reference: unpr</title>
+
+  <script type="text/javascript" async="" src="./AngularJS  Error Reference  unpr_files/ga.js"></script><script type="text/javascript">
+    // dynamically add base tag as well as css and javascript files.
+    // we can't add css/js the usual way, because some browsers (FF) eagerly prefetch resources
+    // before the base attribute is added, causing 404 and terribly slow loading of the docs app.
+    (function() {
+      var indexFile = (location.pathname.match(/\/(index[^\.]*\.html)/) || ['', ''])[1],
+          rUrl = /(#!\/|api|guide|misc|tutorial|error|index[^\.]*\.html).*$/,
+          baseUrl = location.href.replace(rUrl, indexFile),
+          production = location.hostname === 'docs.angularjs.org',
+          headEl = document.getElementsByTagName('head')[0],
+          sync = true;
+
+      addTag('base', {href: baseUrl});
+
+
+      addTag('link', {rel: 'stylesheet', href: 'components/bootstrap-3.1.1/css/bootstrap.min.css', type: 'text/css'});
+      addTag('link', {rel: 'stylesheet', href: 'components/open-sans-fontface-1.0.4/open-sans.css', type: 'text/css'});
+      addTag('link', {rel: 'stylesheet', href: 'css/prettify-theme.css', type: 'text/css'});
+      addTag('link', {rel: 'stylesheet', href: 'css/docs.css', type: 'text/css'});
+      addTag('link', {rel: 'stylesheet', href: 'css/animations.css', type: 'text/css'});
+      
+
+      addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js' }, sync);
+      addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular-resource.min.js' }, sync);
+      addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular-route.min.js' }, sync);
+      addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular-cookies.min.js' }, sync);
+      addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular-sanitize.min.js' }, sync);
+      addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular-touch.min.js' }, sync);
+      addTag('script', {src: '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular-animate.min.js' }, sync);
+      addTag('script', {src: 'components/marked-0.3.1/lib/marked.js' }, sync);
+      addTag('script', {src: 'js/angular-bootstrap/bootstrap.js' }, sync);
+      addTag('script', {src: 'js/angular-bootstrap/bootstrap-prettify.js' }, sync);
+      addTag('script', {src: 'js/angular-bootstrap/dropdown-toggle.js' }, sync);
+      addTag('script', {src: 'components/lunr.js-0.4.2/lunr.min.js' }, sync);
+      addTag('script', {src: 'components/google-code-prettify-1.0.1/src/prettify.js' }, sync);
+      addTag('script', {src: 'components/google-code-prettify-1.0.1/src/lang-css.js' }, sync);
+      addTag('script', {src: 'js/versions-data.js' }, sync);
+      addTag('script', {src: 'js/pages-data.js' }, sync);
+      addTag('script', {src: 'js/docs.js' }, sync);
+      
+
+      function addTag(name, attributes, sync) {
+        var el = document.createElement(name),
+            attrName;
+
+        for (attrName in attributes) {
+          el.setAttribute(attrName, attributes[attrName]);
+        }
+
+        sync ? document.write(outerHTML(el)) : headEl.appendChild(el);
+      }
+
+      function outerHTML(node){
+        // if IE, Chrome take the internal method otherwise build one
+        return node.outerHTML || (
+            function(n){
+                var div = document.createElement('div'), h;
+                div.appendChild(n);
+                h = div.innerHTML;
+                div = null;
+                return h;
+            })(node);
+      }
+    })();
+
+
+    // force page reload when new update is available
+    window.applicationCache && window.applicationCache.addEventListener('updateready', function(e) {
+      if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+        window.applicationCache.swapCache();
+        window.location.reload();
+      }
+    }, false);
+
+    // GA asynchronous tracker
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-8594346-3']);
+    _gaq.push(['_setDomainName', '.angularjs.org']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script><!--<base href="https://docs.angularjs.org/">--><base href="."><link rel="stylesheet" href="./AngularJS  Error Reference  unpr_files/bootstrap.min.css" type="text/css"><link rel="stylesheet" href="./AngularJS  Error Reference  unpr_files/open-sans.css" type="text/css"><link rel="stylesheet" href="./AngularJS  Error Reference  unpr_files/prettify-theme.css" type="text/css"><link rel="stylesheet" href="./AngularJS  Error Reference  unpr_files/docs.css" type="text/css"><link rel="stylesheet" href="./AngularJS  Error Reference  unpr_files/animations.css" type="text/css"><script src="./AngularJS  Error Reference  unpr_files/angular.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/angular-resource.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/angular-route.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/angular-cookies.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/angular-sanitize.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/angular-touch.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/angular-animate.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/marked.js"></script><script src="./AngularJS  Error Reference  unpr_files/bootstrap.js"></script><script src="./AngularJS  Error Reference  unpr_files/bootstrap-prettify.js"></script><script src="./AngularJS  Error Reference  unpr_files/dropdown-toggle.js"></script><script src="./AngularJS  Error Reference  unpr_files/lunr.min.js"></script><script src="./AngularJS  Error Reference  unpr_files/prettify.js"></script><script src="./AngularJS  Error Reference  unpr_files/lang-css.js"></script><script src="./AngularJS  Error Reference  unpr_files/versions-data.js"></script><script src="./AngularJS  Error Reference  unpr_files/pages-data.js"></script><script src="./AngularJS  Error Reference  unpr_files/docs.js"></script>
+<script type="text/javascript" src="./AngularJS  Error Reference  unpr_files/saved_resource"></script><script type="text/javascript" src="./AngularJS  Error Reference  unpr_files/optout-params"></script><style type="text/css" id="GINGER_SOFTWARE_style">.GINGER_SOFTWARE_noMark { background : transparent; }  .GINGER_SOFTWARE_wrapper{ position: absolute; overflow: hidden; margin: 0px; padding: 0px; border: 0px solid transparent } .GINGER_SOFTWARE_contour { position : absolute; margin: 0px; }  .GINGER_SOFTWARE_richText { margin : 0px; padding-bottom: 3px; border-width: 0px; border-color: transparent; display: block; color: transparent; -webkit-text-fill-color: transparent; overflow: hidden; white-space: pre-wrap;}  .GINGER_SOFTWARE_inputWrapper .GINGER_SOFTWARE_richText {position: absolute;}  .GINGER_SOFTWARE_canvas { display:none; background-repeat:no-repeat;}  .GINGER_SOFTWARE_control .GINGER_SOFTWARE_correct, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_SpellingCorrect, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_spelling, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_mark {border-top-left-radius:2px; border-top-right-radius:2px; border-bottom-right-radius:2px; border-bottom-left-radius:2px;} .GINGER_SOFTWARE_control .GINGER_SOFTWARE_correct, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_SpellingCorrect, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_spelling, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_mark {background-image:url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQ0Y2OENGMzE5OTExRTI4NjMxOTExNTUyMDhEMDMwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhFQ0Y2OEQwMzE5OTExRTI4NjMxOTExNTUyMDhEMDMwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEVDRjY4Q0QzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMzAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEVDRjY4Q0UzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMzAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5RRxRxAAAAD0lEQVR42mK48+w7QIABAAVbAroowN08AAAAAElFTkSuQmCC)!important;} .GINGER_SOFTWARE_control .GINGER_SOFTWARE_correct.GINGER_SOFTWARE_synonym, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_SpellingCorrect.GINGER_SOFTWARE_synonym, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_spelling.GINGER_SOFTWARE_synonym, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_mark.GINGER_SOFTWARE_synonym {background-image:url(data:image/gif;base64,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)!important;} .GINGER_SOFTWARE_control .GINGER_SOFTWARE_correct.GINGER_SOFTWARE_noSuggestion, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_SpellingCorrect.GINGER_SOFTWARE_noSuggestion, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_spelling.GINGER_SOFTWARE_noSuggestion, .GINGER_SOFTWARE_control .GINGER_SOFTWARE_mark.GINGER_SOFTWARE_noSuggestion {background-image:url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhFQ0Y2OENGMzE5OTExRTI4NjMxOTExNTUyMDhEMDMwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhFQ0Y2OEQwMzE5OTExRTI4NjMxOTExNTUyMDhEMDMwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEVDRjY4Q0QzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMzAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEVDRjY4Q0UzMTk5MTFFMjg2MzE5MTE1NTIwOEQwMzAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5RRxRxAAAAD0lEQVR42mK48+w7QIABAAVbAroowN08AAAAAElFTkSuQmCC)!important;} .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_correct, .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_SpellingCorrect, .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_spelling, .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_mark {position:relative; background-image:none!important;} .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markHighlightLeft { position : absolute; left:-2px; top:0px; bottom:0px; width:2px;} .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markHighlightRight { position : absolute; right:-2px; top:0px; bottom:0px; width:2px;} .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markHighlightTop { position : absolute; left:0px; right:0px; top:-2px; height:3px;} .GINGER_SOFTWARE_richText .GINGER_SOFTWARE_markHighlightBottom { position : absolute; left:0px; right:0px; bottom:-2px; height:3px;}</style></head>
+<body ginger_software_stylesheet="true" ginger_software_doc="true">
+  <div id="wrapper">
+    <header class="header header-fixed">
+      <section class="navbar navbar-inverse docs-navbar-primary ng-scope" ng-controller="DocsSearchCtrl">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 header-branding">
+              <a class="brand navbar-brand" href="http://angularjs.org/">
+                <img class="logo" src="./AngularJS  Error Reference  unpr_files/angularjs-for-header-only.svg">
+              </a>
+              <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                <li><a href="http://angularjs.org/"><i class="icon-home icon-white"></i> Home</a></li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown ng-isolate-scope">
+                  <a href="https://docs.angularjs.org/#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-eye-open icon-white"></i> Learn <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="disabled"><a href="http://angularjs.org/">Why AngularJS?</a></li>
+                    <li><a href="http://www.youtube.com/user/angularjs">Watch</a></li>
+                    <li><a href="https://docs.angularjs.org/tutorial">Tutorial</a></li>
+                    <li><a href="http://builtwith.angularjs.org/">Case Studies</a></li>
+                    <li><a href="https://github.com/angular/angular-seed">Seed App project template</a></li>
+                    <li><a href="https://docs.angularjs.org/misc/faq">FAQ</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown active ng-isolate-scope">
+                  <a href="https://docs.angularjs.org/#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-book icon-white"></i> Develop <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://docs.angularjs.org/tutorial">Tutorial</a></li>
+                    <li><a href="https://docs.angularjs.org/guide">Developer Guide</a></li>
+                    <li><a href="https://docs.angularjs.org/api">API Reference</a></li>
+                    <li><a href="https://docs.angularjs.org/error">Error Reference</a></li>
+                    <li><a href="https://docs.angularjs.org/misc/contribute">Contribute</a></li>
+                    <li><a href="http://code.angularjs.org/">Download</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown ng-isolate-scope">
+                  <a href="https://docs.angularjs.org/#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="icon-comment icon-white"></i> Discuss <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="http://blog.angularjs.org/">Blog</a></li>
+                    <li><a href="http://groups.google.com/group/angular">Mailing List</a></li>
+                    <li><a href="http://webchat.freenode.net/?channels=angularjs&uio=d4">Chat Room</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://twitter.com/#!/angularjs">Twitter</a></li>
+                    <li><a href="https://plus.google.com/110323587230527980117">Google+</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://github.com/angular/angular.js">GitHub</a></li>
+                    <li><a href="https://github.com/angular/angular.js/issues">Issue Tracker</a></li>
+                  </ul>
+                </li>
+                <li class="divider-vertical"></li>
+              </ul>
+            </div>
+            <form ng-class="{focus:focus}" class="navbar-search col-md-3 docs-search ng-pristine ng-valid" ng-submit="submit()">
+              <span class="glyphicon glyphicon-search search-icon"></span>
+              <input type="text" name="as_q" class="search-query ng-pristine ng-untouched ng-valid" placeholder="Click or press / to search" ng-focus="focus=true" ng-blur="focus=false" ng-change="search(q)" ng-model="q" docs-search-input="" autocomplete="off">
+            </form>
+          </div>
+        </div>
+        <div class="search-results-container ng-hide" ng-show="hasResults">
+          <div class="container">
+            <a href="" ng-click="hideResults()" class="search-close">
+              <span class="glyphicon glyphicon-remove search-close-icon"></span> Close
+            </a>
+            <div class="search-results-frame">
+              <!-- ngRepeat: (key, value) in results -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sup-header">
+        <div class="container main-grid main-header-grid">
+          <div class="grid-left">
+            <div ng-controller="DocsVersionsCtrl" class="picker version-picker ng-scope">
+              <select ng-options="v as (&#39;v&#39; + v.version + (v.isSnapshot ? &#39; (snapshot)&#39; : &#39;&#39;)) group by getGroupName(v) for v in docs_versions" ng-model="docs_version" ng-change="jumpToDocsVersion(docs_version)" class="docs-version-jump ng-pristine ng-untouched ng-valid"><optgroup label="Latest"><option value="0" selected="selected">v1.3.0-build.3163 (snapshot)</option><option value="20">v1.2.23</option><option value="46">v1.1.5</option><option value="52">v1.0.8</option></optgroup><optgroup label="Unstable"><option value="1">v1.3.0-beta.19</option><option value="2">v1.3.0-beta.18</option><option value="3">v1.3.0-beta.17</option><option value="4">v1.3.0-beta.16</option><option value="5">v1.3.0-beta.15</option><option value="6">v1.3.0-beta.14</option><option value="7">v1.3.0-beta.13</option><option value="8">v1.3.0-beta.12</option><option value="9">v1.3.0-beta.11</option><option value="10">v1.3.0-beta.10</option><option value="11">v1.3.0-beta.9</option><option value="12">v1.3.0-beta.8</option><option value="13">v1.3.0-beta.7</option><option value="14">v1.3.0-beta.6</option><option value="15">v1.3.0-beta.5</option><option value="16">v1.3.0-beta.4</option><option value="17">v1.3.0-beta.3</option><option value="18">v1.3.0-beta.2</option><option value="19">v1.3.0-beta.1</option><option value="44">v1.2.0-rc.3</option><option value="45">v1.2.0-rc.2</option><option value="47">v1.1.4</option><option value="48">v1.1.3</option><option value="49">v1.1.2</option><option value="50">v1.1.1</option><option value="51">v1.1.0</option><option value="61">v1.0.0-rc2</option></optgroup><optgroup label="Stable"><option value="21">v1.2.22</option><option value="22">v1.2.21</option><option value="23">v1.2.20</option><option value="24">v1.2.19</option><option value="25">v1.2.18</option><option value="26">v1.2.17</option><option value="27">v1.2.16</option><option value="28">v1.2.15</option><option value="29">v1.2.14</option><option value="30">v1.2.13</option><option value="31">v1.2.12</option><option value="32">v1.2.11</option><option value="33">v1.2.10</option><option value="34">v1.2.9</option><option value="35">v1.2.8</option><option value="36">v1.2.7</option><option value="37">v1.2.6</option><option value="38">v1.2.5</option><option value="39">v1.2.4</option><option value="40">v1.2.3</option><option value="41">v1.2.2</option><option value="42">v1.2.1</option><option value="43">v1.2.0</option><option value="53">v1.0.7</option><option value="54">v1.0.6</option><option value="55">v1.0.5</option><option value="56">v1.0.4</option><option value="57">v1.0.3</option><option value="58">v1.0.2</option><option value="59">v1.0.1</option><option value="60">v1.0.0</option></optgroup></select>
+            </div>
+          </div>
+          <div class="grid-right">
+            <ul class="nav-breadcrumb">
+              <!-- ngRepeat: crumb in breadcrumb --><li ng-repeat="crumb in breadcrumb" class="nav-breadcrumb-entry naked-list ng-scope">
+                <span class="divider"> /</span>
+                <a ng-href="error" class="ng-binding" href="https://docs.angularjs.org/error">Error Reference</a>
+              </li><!-- end ngRepeat: crumb in breadcrumb --><li ng-repeat="crumb in breadcrumb" class="nav-breadcrumb-entry naked-list ng-scope">
+                <span class="divider"> /</span>
+                <a ng-href="error/$injector" class="ng-binding" href="https://docs.angularjs.org/error/$injector">$injector</a>
+              </li><!-- end ngRepeat: crumb in breadcrumb --><li ng-repeat="crumb in breadcrumb" class="nav-breadcrumb-entry naked-list ng-scope">
+                <span class="divider"> /</span>
+                <a ng-href="error/$injector/unpr" class="ng-binding" href="https://docs.angularjs.org/error/$injector/unpr">unpr</a>
+              </li><!-- end ngRepeat: crumb in breadcrumb -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section role="main" class="container main-body">
+      <div class="main-grid main-body-grid">
+        <div class="grid-left">
+          <a class="btn toc-toggle visible-xs" ng-click="toc=!toc">Show / Hide Table of Contents</a>
+          <div class="side-navigation ng-hide" ng-show="toc==true">
+            <ul class="nav-list naked-list">
+              <!-- ngRepeat: navGroup in currentArea.navGroups track by navGroup.name --><li ng-repeat="navGroup in currentArea.navGroups track by navGroup.name" class="nav-index-group ng-scope">
+                <a href="https://docs.angularjs.org/error" ng-class="navClass(navGroup)" class="nav-index-group-heading ng-binding active">Error Reference</a>
+                <ul class="aside-nav">
+                  <!-- ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$animate" class="ng-binding">$animate</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$animate/notcsel" class="ng-binding">notcsel</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$cacheFactory" class="ng-binding">$cacheFactory</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$cacheFactory/iid" class="ng-binding">iid</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile" class="ng-binding">$compile</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/ctreq" class="ng-binding">ctreq</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/iscp" class="ng-binding">iscp</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/multidir" class="ng-binding">multidir</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/nodomevents" class="ng-binding">nodomevents</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/nonassign" class="ng-binding">nonassign</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/selmulti" class="ng-binding">selmulti</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/tpload" class="ng-binding">tpload</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/tplrt" class="ng-binding">tplrt</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$compile/uterdir" class="ng-binding">uterdir</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$controller" class="ng-binding">$controller</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$controller/noscp" class="ng-binding">noscp</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$httpBackend" class="ng-binding">$httpBackend</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$httpBackend/noxhr" class="ng-binding">noxhr</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector" class="ng-binding">$injector</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector/cdep" class="ng-binding">cdep</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector/itkn" class="ng-binding">itkn</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector/modulerr" class="ng-binding">modulerr</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector/nomod" class="ng-binding">nomod</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector/pget" class="ng-binding">pget</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector/strictdi" class="ng-binding">strictdi</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$injector/unpr" class="ng-binding">unpr</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$interpolate" class="ng-binding">$interpolate</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$interpolate/interr" class="ng-binding">interr</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$interpolate/noconcat" class="ng-binding">noconcat</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$location" class="ng-binding">$location</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$location/ihshprfx" class="ng-binding">ihshprfx</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$location/ipthprfx" class="ng-binding">ipthprfx</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$location/isrcharg" class="ng-binding">isrcharg</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$location/nobase" class="ng-binding">nobase</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse" class="ng-binding">$parse</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/isecdom" class="ng-binding">isecdom</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/isecff" class="ng-binding">isecff</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/isecfld" class="ng-binding">isecfld</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/isecfn" class="ng-binding">isecfn</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/isecobj" class="ng-binding">isecobj</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/isecwindow" class="ng-binding">isecwindow</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/lexerr" class="ng-binding">lexerr</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/syntax" class="ng-binding">syntax</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$parse/ueoe" class="ng-binding">ueoe</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$q" class="ng-binding">$q</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$q/norslvr" class="ng-binding">norslvr</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$q/qcycle" class="ng-binding">qcycle</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$resource" class="ng-binding">$resource</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$resource/badargs" class="ng-binding">badargs</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$resource/badcfg" class="ng-binding">badcfg</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$resource/badmember" class="ng-binding">badmember</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$resource/badname" class="ng-binding">badname</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$rootScope" class="ng-binding">$rootScope</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$rootScope/infdig" class="ng-binding">infdig</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$rootScope/inprog" class="ng-binding">inprog</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sanitize" class="ng-binding">$sanitize</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sanitize/badparse" class="ng-binding">badparse</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce" class="ng-binding">$sce</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce/icontext" class="ng-binding">icontext</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce/iequirks" class="ng-binding">iequirks</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce/imatcher" class="ng-binding">imatcher</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce/insecurl" class="ng-binding">insecurl</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce/itype" class="ng-binding">itype</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce/iwcard" class="ng-binding">iwcard</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/$sce/unsafe" class="ng-binding">unsafe</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/jqLite" class="ng-binding">jqLite</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/jqLite/nosel" class="ng-binding">nosel</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/jqLite/offargs" class="ng-binding">offargs</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/jqLite/onargs" class="ng-binding">onargs</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ng" class="ng-binding">ng</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ng/areq" class="ng-binding">areq</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ng/badname" class="ng-binding">badname</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ng/btstrpd" class="ng-binding">btstrpd</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ng/cpi" class="ng-binding">cpi</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ng/cpws" class="ng-binding">cpws</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngModel" class="ng-binding">ngModel</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngModel/constexpr" class="ng-binding">constexpr</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngModel/nonassign" class="ng-binding">nonassign</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngOptions" class="ng-binding">ngOptions</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngOptions/iexp" class="ng-binding">iexp</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngPattern" class="ng-binding">ngPattern</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngPattern/noregexp" class="ng-binding">noregexp</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngRepeat" class="ng-binding">ngRepeat</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngRepeat/badident" class="ng-binding">badident</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngRepeat/dupes" class="ng-binding">dupes</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngRepeat/iexp" class="ng-binding">iexp</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngRepeat/iidexp" class="ng-binding">iidexp</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active nav-index-section">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngTransclude" class="ng-binding">ngTransclude</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems --><li ng-repeat="navItem in navGroup.navItems" ng-class="navClass(navItem)" class="nav-index-listing ng-scope active">
+                    <!-- ngIf: navItem.extra.href -->
+                    <a tabindex="2" ng-class="linkClass(navItem)" href="https://docs.angularjs.org/error/ngTransclude/orphan" class="ng-binding">orphan</a>
+                  </li><!-- end ngRepeat: navItem in navGroup.navItems -->
+                </ul>
+              </li><!-- end ngRepeat: navGroup in currentArea.navGroups track by navGroup.name -->
+            </ul>
+            <a href="" ng-click="toc=false" class="toc-close visible-xs">
+              <span class="glyphicon glyphicon-remove toc-close-icon"></span> Close
+            </a>
+          </div>
+        </div>
+        <div class="grid-right">
+          <div id="loading" ng-show="loading" class="ng-hide">Loading...</div>
+          <!-- ngInclude: currentPage.outputPath || 'Error404.html' --><div ng-hide="loading" ng-include="currentPage.outputPath || &#39;Error404.html&#39;" onload="afterPartialLoaded()" autoscroll="" class="ng-scope"><a href="http://github.com/angular/angular.js/edit/master/docs/content/error/$injector/unpr.ngdoc" class="improve-docs btn btn-primary ng-scope"><i class="glyphicon glyphicon-edit">&nbsp;</i>Improve this doc</a>
+
+
+<h1 class="ng-scope">Error: $injector:unpr
+  <div><span class="hint">Unknown Provider</span></div>
+</h1>
+
+<div class="ng-scope">
+    <pre class="minerr-errmsg" error-display="Unknown provider: {0}">Unknown provider: </pre>
+</div>
+
+<h2 class="ng-scope">Description</h2>
+<div class="description ng-scope">
+  <p>This error results from the <code><span class="pln">$injector</span></code> being unable to resolve a required
+dependency. To fix this, make sure the dependency is defined and spelled
+correctly. For example:</p>
+<pre><code><span class="pln">angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="str">'myApp'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[])</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">controller</span><span class="pun">(</span><span class="str">'MyController'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'myService'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">(</span><span class="pln">myService</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// Do something with myService</span><span class="pln">
+  </span><span class="pun">}]);</span></code></pre>
+<p>The above code will fail with <code><span class="pln">$injector</span><span class="pun">:</span><span class="pln">unpr</span></code> if <code><span class="pln">myService</span></code> is not defined.</p>
+<p>Making sure each dependency is defined will fix the problem, as noted below.</p>
+<pre><code><span class="pln">angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="str">'myApp'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[])</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">service</span><span class="pun">(</span><span class="str">'myService'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">/* ... */</span><span class="pln"> </span><span class="pun">})</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">controller</span><span class="pun">(</span><span class="str">'MyController'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'myService'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">(</span><span class="pln">myService</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// Do something with myService</span><span class="pln">
+  </span><span class="pun">}]);</span></code></pre>
+<p>An unknown provider error can also be caused by accidentally redefining a
+module using the <code><span class="pln">angular</span><span class="pun">.</span><span class="kwd">module</span></code> API, as shown in the following example.</p>
+<pre><code><span class="pln">angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="str">'myModule'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[])</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">service</span><span class="pun">(</span><span class="str">'myCoolService'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">/* ... */</span><span class="pln"> </span><span class="pun">});</span><span class="pln">
+
+angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="str">'myModule'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[])</span><span class="pln">
+  </span><span class="com">// myModule has already been created! This is not what you want!</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">directive</span><span class="pun">(</span><span class="str">'myDirective'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'myCoolService'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">(</span><span class="pln">myCoolService</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// This directive definition throws unknown provider, because myCoolService</span><span class="pln">
+    </span><span class="com">// has been destroyed.</span><span class="pln">
+  </span><span class="pun">}]);</span></code></pre>
+<p>To fix this problem, make sure you only define each module with the
+<code><span class="pln">angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="pln">name</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="pln">requires</span><span class="pun">])</span></code> syntax once across your entire project.
+Retrieve it for subsequent use with <code><span class="pln">angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="pln">name</span><span class="pun">)</span></code>. The fixed example
+is shown below.</p>
+<pre><code><span class="pln">angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="str">'myModule'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[])</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">service</span><span class="pun">(</span><span class="str">'myCoolService'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">/* ... */</span><span class="pln"> </span><span class="pun">});</span><span class="pln">
+
+angular</span><span class="pun">.</span><span class="kwd">module</span><span class="pun">(</span><span class="str">'myModule'</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">.</span><span class="pln">directive</span><span class="pun">(</span><span class="str">'myDirective'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">[</span><span class="str">'myCoolService'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">(</span><span class="pln">myCoolService</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// This directive definition does not throw unknown provider.</span><span class="pln">
+  </span><span class="pun">}]);</span></code></pre>
+
+</div>
+
+
+</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a back-to-top="">Back to top</a></p>
+
+        <p>
+          Super-powered by Google  ©2010-2014
+          ( <a id="version" ng-href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md#1.3.0-beta.19" ng-bind-template="v1.3.0-beta.19  rafter-ascension" class="ng-binding" href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md#1.3.0-beta.19">v1.3.0-beta.19  rafter-ascension</a>
+          )
+        </p>
+        <p>
+          Code licensed under the
+          <a href="https://github.com/angular/angular.js/blob/master/LICENSE" target="_blank">The
+            MIT License</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+<script type="text/javascript" src="chrome-extension://bmdblncegkenkacieihfhpjfppoconhi/in-page-script.js"></script><script type="text/javascript" async="" src="./AngularJS  Error Reference  unpr_files/1b75c4afd7.js"></script><iframe style="display: none; position: fixed; top: 50%; left: 50%; width: 650px; height: 500px; margin-top: -250px; margin-left: -325px; z-index: 2147483647;" id="__twbopt1b75c4afd7" frameborder="0" scrolling="no"></iframe><iframe width="0" height="0" frameborder="0" src="about:blank" id="GINGER_SOFTWARE_bubblesIFrame" scrolling="no" style="border: 0px solid; display: none; position: absolute; z-index: 2147483647; height: 0px; width: 0px; background-color: transparent;"></iframe><div id="GingerWidgetInfo" style="display:none;">{"version":"0.1.0.524","isExtension":true,"extensionName":"Chrome"}</div><script async="" src="./AngularJS  Error Reference  unpr_files/int-js"></script><script async="" src="./AngularJS  Error Reference  unpr_files/extpundr.js"></script><script async="" src="./AngularJS  Error Reference  unpr_files/int-js-words"></script><script async="" src="./AngularJS  Error Reference  unpr_files/extcpn.js"></script></body></html>

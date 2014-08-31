@@ -1,0 +1,35 @@
+<div onload="getPatient()">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group">
+			    <div class="input-group">
+			    	<div class="input-group-addon btn btn-primary search-icon"><span class="glyphicon glyphicon-search"></span></div>
+			    	<input class="form-control" type="search" ng-model="searchtxt">
+			    </div>
+			</div>
+
+			<div class="list-group">
+			  <a href class="list-group-item" ng-repeat="patient in patients | filter:searchtxt" ng-click="loadPdf(patient)">
+			    <h4 class="list- group-item-heading">{{patient.name}}</h4>
+			    <p class="list-group-item-text">Age : {{patient.age}}  </p>
+			    <p class="list-group-item-text">{{patient.doctorname}}&nbsp;-&nbsp;{{patient.hospitalname}}</p>
+			    <p class="list-group-item-text">Visiting Date : {{patient.visitingdate.split("T")[0]}} </p>
+			  </a>
+			</div>
+		</div>
+  		<div class="col-md-8">
+  			<div>
+  			<div ng-class="pageClass" id="pages">  				
+  				<span>Page: <span id="page_num"></span> / <span id="page_count"></span></span><br>
+  				<div class="btn-group">
+				  <button type="button" class="btn btn-primary" ng-click="getPrevPage()">Previous</button>
+				  <button type="button" class="btn btn-primary" ng-click="getNextPage()">Next</button>
+				</div>				
+  			</div>
+  			<div class="center-block"> 
+				<canvas id="the-canvas" class="center-block"></canvas>
+			</div>
+		</div>
+  		</div>
+	</div>
+</div>
